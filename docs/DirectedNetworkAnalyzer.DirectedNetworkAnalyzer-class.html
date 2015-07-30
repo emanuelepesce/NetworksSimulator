@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>DirectedNetworkAnalyzer.DirectedNetworkAnalyzer</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >NetworkTool</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="DirectedNetworkAnalyzer-module.html">Module&nbsp;DirectedNetworkAnalyzer</a> ::
+        Class&nbsp;DirectedNetworkAnalyzer
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="DirectedNetworkAnalyzer.DirectedNetworkAnalyzer-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class DirectedNetworkAnalyzer</h1><p class="nomargin-top"><span class="codelink"><a href="DirectedNetworkAnalyzer-pysrc.html#DirectedNetworkAnalyzer">source&nbsp;code</a></span></p>
+<center>
+<center>  <map id="uml_class_diagram_for_directed" name="uml_class_diagram_for_directed">
+<area shape="rect" id="node1_21" href="DirectedNetworkAnalyzer.DirectedNetworkAnalyzer-class.html#__init__" title="Constructor" alt="" coords="17,289,505,309"/>
+<area shape="rect" id="node1_22" href="DirectedNetworkAnalyzer.DirectedNetworkAnalyzer-class.html#getGraph" title="Return the graph dictionary" alt="" coords="17,309,505,329"/>
+<area shape="rect" id="node1_23" href="DirectedNetworkAnalyzer.DirectedNetworkAnalyzer-class.html#diameter" title="Return the largest shortest path and the number of nodes and edges of the &#160;largest component" alt="" coords="17,329,505,349"/>
+<area shape="rect" id="node1_24" href="DirectedNetworkAnalyzer.DirectedNetworkAnalyzer-class.html#counterUtility" title="Return the number of edges, the number of triangles, length&#45;2 paths and the average clustering" alt="" coords="17,349,505,369"/>
+<area shape="rect" id="node1_25" href="DirectedNetworkAnalyzer.DirectedNetworkAnalyzer-class.html#averageClustering" title="Return the average clustering of the graph (Clustering index of a node is &#160;the number of his neghbors that are connected among themselves)" alt="" coords="17,369,505,389"/>
+<area shape="rect" id="node1_26" href="DirectedNetworkAnalyzer.DirectedNetworkAnalyzer-class.html#averageClusteringUndirected" title="Return the average clustering of the graph (Clustering index of a node is &#160;the number of his neghbors that are connected among themselves)" alt="" coords="17,389,505,409"/>
+<area shape="rect" id="node1_27" href="DirectedNetworkAnalyzer.DirectedNetworkAnalyzer-class.html#betweenness" title="Compute betweenness centrality for each node of the graph" alt="" coords="17,409,505,429"/>
+<area shape="rect" id="node1_28" href="DirectedNetworkAnalyzer.DirectedNetworkAnalyzer-class.html#eigenvector" title="Compute eigenvector centrality for each node of the graph" alt="" coords="17,429,505,449"/>
+<area shape="rect" id="node1_29" href="DirectedNetworkAnalyzer.DirectedNetworkAnalyzer-class.html#katz" title="Computes katz centrality K(u) = sum_(n in neighbors(u)) ( k(n)+1)" alt="" coords="17,449,505,469"/>
+<area shape="rect" id="node1_30" href="DirectedNetworkAnalyzer.DirectedNetworkAnalyzer-class.html#katzTrue" title="Computes katz centrality K(u) = sum_(n in neighbors(u)) ( k(n)+1)" alt="" coords="17,469,505,489"/>
+<area shape="rect" id="node1_31" href="DirectedNetworkAnalyzer.DirectedNetworkAnalyzer-class.html#topCenters" title="Return the k nodes with highest centrality" alt="" coords="17,489,505,509"/>
+<area shape="rect" id="node1" href="DirectedNetworkAnalyzer.DirectedNetworkAnalyzer-class.html" title="Director Network analyzer class which contains methods for analyzing a graph." alt="" coords="5,257,517,516"/>
+<area shape="rect" id="node2_32" href="NaiveDirectedGraph.NaiveDirectedGraph-class.html#graphDict" title="========= graph get methods =========" alt="" coords="96,30,427,50"/>
+<area shape="rect" id="node2_33" href="NaiveDirectedGraph.NaiveDirectedGraph-class.html#vertices" title="Return the vertices of a graph" alt="" coords="96,53,427,73"/>
+<area shape="rect" id="node2_34" href="NaiveDirectedGraph.NaiveDirectedGraph-class.html#edges" title="Return a list of the edges of the graph (Edges need to be generated)." alt="" coords="96,73,427,93"/>
+<area shape="rect" id="node2_35" href="NaiveDirectedGraph.NaiveDirectedGraph-class.html#numOfEdges" title="Return the number of the edges of a graph" alt="" coords="96,93,427,113"/>
+<area shape="rect" id="node2_36" href="NaiveDirectedGraph.NaiveDirectedGraph-class.html#numOfVertices" title="Return the number of the edges of a graph" alt="" coords="96,113,427,133"/>
+<area shape="rect" id="node2_37" href="NaiveDirectedGraph.NaiveDirectedGraph-class.html#readGraph" title="Read filename and return the graph in a dictionary structure" alt="" coords="96,133,427,153"/>
+<area shape="rect" id="node2_38" href="NaiveDirectedGraph.NaiveDirectedGraph-class.html#addVertex" title="Add a vertex to the graph." alt="" coords="96,153,427,173"/>
+<area shape="rect" id="node2_39" href="NaiveDirectedGraph.NaiveDirectedGraph-class.html#addEdge" title="Add an edge to the graph between the pair &quot;vertex1&#45;vertex2&quot;s" alt="" coords="96,173,427,193"/>
+<area shape="rect" id="node2_40" href="NaiveDirectedGraph.NaiveDirectedGraph-class.html#plot" title="plot the graph" alt="" coords="96,193,427,213"/>
+<area shape="rect" id="node2_41" href="NaiveDirectedGraph.NaiveDirectedGraph-class.html#__str__" title="NaiveDirectedGraph.NaiveDirectedGraph.__str__" alt="" coords="96,213,427,233"/>
+<area shape="rect" id="node2" href="NaiveDirectedGraph.NaiveDirectedGraph-class.html" title="Simple Graph class which contains basics graph methods" alt="" coords="84,5,439,239"/>
+</map>
+  <img src="uml_class_diagram_for_directed.gif" alt='' usemap="#uml_class_diagram_for_directed" ismap="ismap" class="graph-without-title" />
+</center>
+</center>
+<hr />
+<p>Director Network analyzer class which contains methods for analyzing a
+  graph. Extends NaiveDirectedGraph.</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="DirectedNetworkAnalyzer.DirectedNetworkAnalyzer-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">filename</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">graphDict</span>=<span class="summary-sig-default"><code class="variable-group">{</code><code class="variable-group">}</code></span>)</span><br />
+      Constructor</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="DirectedNetworkAnalyzer-pysrc.html#DirectedNetworkAnalyzer.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">graph</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="DirectedNetworkAnalyzer.DirectedNetworkAnalyzer-class.html#getGraph" class="summary-sig-name">getGraph</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Return the graph dictionary</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="DirectedNetworkAnalyzer-pysrc.html#DirectedNetworkAnalyzer.getGraph">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="diameter"></a><span class="summary-sig-name">diameter</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">graph</span>=<span class="summary-sig-default"><code class="variable-group">{</code><code class="variable-group">}</code></span>)</span><br />
+      Return the largest shortest path and the number of nodes and edges of
+      the largest component</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="DirectedNetworkAnalyzer-pysrc.html#DirectedNetworkAnalyzer.diameter">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="counterUtility"></a><span class="summary-sig-name">counterUtility</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">graph</span>=<span class="summary-sig-default"><code class="variable-group">{</code><code class="variable-group">}</code></span>)</span><br />
+      Return the number of edges, the number of triangles, length-2 paths 
+      and the average clustering</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="DirectedNetworkAnalyzer-pysrc.html#DirectedNetworkAnalyzer.counterUtility">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="averageClustering"></a><span class="summary-sig-name">averageClustering</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Return the average clustering of the graph (Clustering index of a 
+      node is the number of his neghbors that are connected among 
+      themselves)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="DirectedNetworkAnalyzer-pysrc.html#DirectedNetworkAnalyzer.averageClustering">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="averageClusteringUndirected"></a><span class="summary-sig-name">averageClusteringUndirected</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Return the average clustering of the graph (Clustering index of a 
+      node is the number of his neghbors that are connected among 
+      themselves)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="DirectedNetworkAnalyzer-pysrc.html#DirectedNetworkAnalyzer.averageClusteringUndirected">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="DirectedNetworkAnalyzer.DirectedNetworkAnalyzer-class.html#betweenness" class="summary-sig-name">betweenness</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Compute betweenness centrality for each node of the graph</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="DirectedNetworkAnalyzer-pysrc.html#DirectedNetworkAnalyzer.betweenness">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="DirectedNetworkAnalyzer.DirectedNetworkAnalyzer-class.html#eigenvector" class="summary-sig-name">eigenvector</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">confidence</span>=<span class="summary-sig-default">0.01</span>)</span><br />
+      Compute eigenvector centrality for each node of the graph</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="DirectedNetworkAnalyzer-pysrc.html#DirectedNetworkAnalyzer.eigenvector">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="DirectedNetworkAnalyzer.DirectedNetworkAnalyzer-class.html#katz" class="summary-sig-name">katz</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">alpha</span>=<span class="summary-sig-default">0.125</span>,
+        <span class="summary-sig-arg">confidence</span>=<span class="summary-sig-default">1e-06</span>,
+        <span class="summary-sig-arg">max_iter</span>=<span class="summary-sig-default">1000</span>)</span><br />
+      Computes katz centrality K(u) = sum_(n in neighbors(u)) ( k(n)+1)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="DirectedNetworkAnalyzer-pysrc.html#DirectedNetworkAnalyzer.katz">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="DirectedNetworkAnalyzer.DirectedNetworkAnalyzer-class.html#katzTrue" class="summary-sig-name">katzTrue</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">alpha</span>=<span class="summary-sig-default">0.125</span>,
+        <span class="summary-sig-arg">confidence</span>=<span class="summary-sig-default">1e-06</span>,
+        <span class="summary-sig-arg">max_iter</span>=<span class="summary-sig-default">1000</span>)</span><br />
+      Computes katz centrality K(u) = sum_(n in neighbors(u)) ( k(n)+1)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="DirectedNetworkAnalyzer-pysrc.html#DirectedNetworkAnalyzer.katzTrue">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="DirectedNetworkAnalyzer.DirectedNetworkAnalyzer-class.html#topCenters" class="summary-sig-name">topCenters</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">k</span>=<span class="summary-sig-default">1</span>,
+        <span class="summary-sig-arg">centrality</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">e</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">confidence</span>=<span class="summary-sig-default">0.01</span>,
+        <span class="summary-sig-arg">alpha</span>=<span class="summary-sig-default">0.125</span>,
+        <span class="summary-sig-arg">max_iter</span>=<span class="summary-sig-default">1000</span>)</span><br />
+      Return the k nodes with highest centrality</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="DirectedNetworkAnalyzer-pysrc.html#DirectedNetworkAnalyzer.topCenters">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="NaiveDirectedGraph.NaiveDirectedGraph-class.html">NaiveDirectedGraph.NaiveDirectedGraph</a></code></b>:
+      <code><a href="NaiveDirectedGraph.NaiveDirectedGraph-class.html#__str__">__str__</a></code>,
+      <code><a href="NaiveDirectedGraph.NaiveDirectedGraph-class.html#addEdge">addEdge</a></code>,
+      <code><a href="NaiveDirectedGraph.NaiveDirectedGraph-class.html#addVertex">addVertex</a></code>,
+      <code><a href="NaiveDirectedGraph.NaiveDirectedGraph-class.html#edges">edges</a></code>,
+      <code><a href="NaiveDirectedGraph.NaiveDirectedGraph-class.html#numOfEdges">numOfEdges</a></code>,
+      <code><a href="NaiveDirectedGraph.NaiveDirectedGraph-class.html#numOfVertices">numOfVertices</a></code>,
+      <code><a href="NaiveDirectedGraph.NaiveDirectedGraph-class.html#plot">plot</a></code>,
+      <code><a href="NaiveDirectedGraph.NaiveDirectedGraph-class.html#readGraph">readGraph</a></code>,
+      <code><a href="NaiveDirectedGraph.NaiveDirectedGraph-class.html#vertices">vertices</a></code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== INSTANCE VARIABLES ==================== -->
+<a name="section-InstanceVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="NaiveDirectedGraph.NaiveDirectedGraph-class.html">NaiveDirectedGraph.NaiveDirectedGraph</a></code></b>:
+      <code><a href="NaiveDirectedGraph.NaiveDirectedGraph-class.html#graphDict">graphDict</a></code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">filename</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">graphDict</span>=<span class="sig-default"><code class="variable-group">{</code><code class="variable-group">}</code></span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="DirectedNetworkAnalyzer-pysrc.html#DirectedNetworkAnalyzer.__init__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Constructor</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>filename</code></strong> (string) - name of the file</li>
+        <li><strong class="pname"><code>graphDict</code></strong> (graph dictionary) - graph</li>
+    </ul></dd>
+    <dt>Overrides:
+        <a href="NaiveDirectedGraph.NaiveDirectedGraph-class.html#__init__">NaiveDirectedGraph.NaiveDirectedGraph.__init__</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="getGraph"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getGraph</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="DirectedNetworkAnalyzer-pysrc.html#DirectedNetworkAnalyzer.getGraph">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Return the graph dictionary</p>
+  <dl class="fields">
+    <dt>Returns: graph</dt>
+        <dd>graph</dd>
+    <dt>Overrides:
+        <a href="NaiveDirectedGraph.NaiveDirectedGraph-class.html#getGraph">NaiveDirectedGraph.NaiveDirectedGraph.getGraph</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="betweenness"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">betweenness</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="DirectedNetworkAnalyzer-pysrc.html#DirectedNetworkAnalyzer.betweenness">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Compute betweenness centrality for each node of the graph</p>
+  <p>Girman-Newman algorithm</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="eigenvector"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">eigenvector</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">confidence</span>=<span class="sig-default">0.01</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="DirectedNetworkAnalyzer-pysrc.html#DirectedNetworkAnalyzer.eigenvector">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Compute eigenvector centrality for each node of the graph</p>
+  <p>Method: left dominant eigenvector</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>confidence</code></strong> (number) - trueshold for convergence</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="katz"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">katz</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">alpha</span>=<span class="sig-default">0.125</span>,
+        <span class="sig-arg">confidence</span>=<span class="sig-default">1e-06</span>,
+        <span class="sig-arg">max_iter</span>=<span class="sig-default">1000</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="DirectedNetworkAnalyzer-pysrc.html#DirectedNetworkAnalyzer.katz">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Computes katz centrality K(u) = sum_(n in neighbors(u)) ( k(n)+1)</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>alpha</code></strong> (real) - attenuation factor</li>
+        <li><strong class="pname"><code>confidence</code></strong> (real) - trueshold for convergence</li>
+        <li><strong class="pname"><code>max_iter</code></strong> (integer) - max number of iterations
+          <p>Note: this centrality is implemented considering outgoing 
+          edges.</p></li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="katzTrue"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">katzTrue</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">alpha</span>=<span class="sig-default">0.125</span>,
+        <span class="sig-arg">confidence</span>=<span class="sig-default">1e-06</span>,
+        <span class="sig-arg">max_iter</span>=<span class="sig-default">1000</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="DirectedNetworkAnalyzer-pysrc.html#DirectedNetworkAnalyzer.katzTrue">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Computes katz centrality K(u) = sum_(n in neighbors(u)) ( k(n)+1)</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>alpha</code></strong> (real) - attenuation factor</li>
+        <li><strong class="pname"><code>confidence</code></strong> (real) - trueshold for convergence</li>
+        <li><strong class="pname"><code>max_iter</code></strong> (integer) - max number of iterations</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="topCenters"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">topCenters</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">k</span>=<span class="sig-default">1</span>,
+        <span class="sig-arg">centrality</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">e</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">confidence</span>=<span class="sig-default">0.01</span>,
+        <span class="sig-arg">alpha</span>=<span class="sig-default">0.125</span>,
+        <span class="sig-arg">max_iter</span>=<span class="sig-default">1000</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="DirectedNetworkAnalyzer-pysrc.html#DirectedNetworkAnalyzer.topCenters">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Return the k nodes with highest centrality</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>centrality</code></strong> (char) - centrality measure to select. centrality values available: 'b': 
+          betweenness 'e': left dominant eigenvector 'k': katz centrality</li>
+        <li><strong class="pname"><code>confidence</code></strong> (real) - confidence value</li>
+        <li><strong class="pname"><code>k</code></strong> (integer)</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >NetworkTool</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Thu Jul 30 17:20:36 2015
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
