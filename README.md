@@ -2,7 +2,7 @@
 
 
 ## About
-Python tool which allows to generate different kind of network and doing analysis on it.
+Python tool which allows to generate different kind of networks and to do analysis on them.
 
 ## Main Features
 **Network generation models:** <br\>
